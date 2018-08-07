@@ -1,0 +1,93 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-islandnav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-islandfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-islandfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-islandnav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+
+    responsiveVoice.speak('热岛是指:开发与非开发地域间的温度梯度差。深色屋面材料会吸收大量的太阳辐射热量，造成屋面温度明显高于周边环境。受此影响，城市的环境温度将有所提高，建筑的制冷负荷将被增加，并将导致电力消耗增加，温室气体排放及污染增加。为了降低热岛，以尽量减少对区域气候、人类和生物栖息地的影响，我厂厂房屋面选用自洁隔热性彩板，正面面漆为自洁隔热型耐久性聚酯涂料，面漆颜色为ZG白灰，太阳光反射系数大于78。' , 'Chinese Female', {rate: 0.95}, {volume: 3});
+
+</script>
+
+
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/kechixufazhan.mp3">
+</audio>
+<div class="speed-main-contentpage">
+    <div class="row no-margin speed-main-contentpage-minheight"   >
+        <div class="col-lg-7  margin-top-20"  >
+
+            <div class="slider slider-islandfor center">
+
+                <div><img   class="slickimageheigh" src="assets/img/speed/LEEDimages/1.1-1big.png"></div>
+                <div><img   class="slickimageheigh" src="assets/img/speed/LEEDimages/1.1-2big.png"></div>
+                <div><img   class="slickimageheigh" src="assets/img/speed/LEEDimages/1.1-1big.png"></div>
+                <div><img   class="slickimageheigh" src="assets/img/speed/LEEDimages/1.1-2big.png"></div>
+
+            </div>
+            <div class="slider slider-islandnav    margin-left-70 center" style="width:1000px;">
+
+                <div><img src="assets/img/speed/LEEDimages/1.1-1.png"></div>
+                <div><img src="assets/img/speed/LEEDimages/1.1-2.png"></div>
+                <div><img src="assets/img/speed/LEEDimages/1.1-1.png"></div>
+                <div><img src="assets/img/speed/LEEDimages/1.1-2.png"></div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+           <p class="speedsontentTitle  margin-top-30 big " style="margin-left:80px;font-weight: bold;">  </p>
+            <p class="speedsontentTitle  margin-top-30 big " style="margin-left:80px; font-size: 20px;color: #7a7a7a">
+
+         </p>
+            <p class="speedsontentTitle  margin-top-30 big "
+               style="margin-left:100px;font-weight: bold; color: #4469aa">
+                热岛效应</p>
+            <p class="speedsontentTitle  margin-top-10 big "
+               style="font-size:24px;color:#2890c6;margin-left:100px;">
+                本项目选用自洁隔热性彩板，正面面漆为自洁隔热型耐久性聚酯<br>涂料，面漆颜色为ZG白灰，太阳光反射系数大于78
+            </p>
+
+
+        </div>
+            <div><img src="assets/img/speed/LEEDimages/kechixuxuanzhijiguihua_renaoxiaoying_03.png"></div>
+        </div>
+
+
+
+    <div ui-view="leedfooter"></div>
+
+    <div class=" row no-margin breadcrumb-fixed-50   ">
+
+        <div >
+            <ul id="breadcrumb"   class="ulbreadmargin" >
+
+                <li><a ui-sref="app.dashboard"><i class="fa fa-home"></i>主页</a></li>
+                <li><a ui-sref="app.leedmain"><span  ></span>LEED</a></li>
+                <li><a href="#"><span  ></span>可持续选址及规划</a></li>
+                <li><a href="#"><span  ></span>热岛效应</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,286 @@
+﻿<script type="text/javascript">
+    /** Document Ready Functions **/
+    /********************************************************************/
+
+        $( document ).ready(function() {
+            var getaudio = $('#player')[0];
+            /* Get the audio from the player (using the player's ID), the [0] is necessary */
+            var mouseovertimer;
+            $('.speaker').addClass('speakerplay');
+            /* Global variable for a timer. When the mouse is hovered over the speaker it will start playing after hovering for 1 second, if less than 1 second it won't play (incase you accidentally hover over the speaker) */
+            var audiostatus = 'on';
+            /* Global variable for the audio's status (off or on). It's a bit crude but it works for determining the status. */
+            getaudio.load();
+            /* Loads the audio */
+            getaudio.play();
+            /* Play the audio (starting at the beginning of the track) */
+            $(document).on('mouseenter', '.speaker', function() {
+                /* Bonus feature, if the mouse hovers over the speaker image for more than 1 second the audio will start playing */
+                if (!mouseovertimer) {
+                    mouseovertimer = window.setTimeout(function() {
+                        mouseovertimer = null;
+                        if (!$('.speaker').hasClass("speakerplay")) {
+                            getaudio.load();
+                            /* Loads the audio */
+                            getaudio.play();
+                            /* Play the audio (starting at the beginning of the track) */
+                            $('.speaker').addClass('speakerplay');
+                            return false;
+                        }
+                    }, 3000);
+                }
+            });
+
+            $(document).on('mouseleave', '.speaker', function() {
+                /* If the mouse stops hovering on the image (leaves the image) clear the timer, reset back to 0 */
+                if (mouseovertimer) {
+                    window.clearTimeout(mouseovertimer);
+                    mouseovertimer = null;
+                }
+            });
+
+            $(document).on('click touchend', '.speaker', function() {
+                /* Touchend is necessary for mobile devices, click alone won't work */
+                if (!$('.speaker').hasClass("speakerplay")) {
+                    if (audiostatus == 'off') {
+                        $('.speaker').addClass('speakerplay');
+                        getaudio.load();
+                        getaudio.play();
+                        window.clearTimeout(mouseovertimer);
+                        audiostatus = 'on';
+                        return false;
+                    } else if (audiostatus == 'on') {
+                        $('.speaker').addClass('speakerplay');
+                        getaudio.play()
+                    }
+                } else if ($('.speaker').hasClass("speakerplay")) {
+                    getaudio.pause();
+                    $('.speaker').removeClass('speakerplay');
+                    window.clearTimeout(mouseovertimer);
+                    audiostatus = 'on';
+                }
+            });
+
+            $('#player').on('ended', function() {
+                $('.speaker').removeClass('speakerplay');
+                /*When the audio has finished playing, remove the class speakerplay*/
+                audiostatus = 'off';
+                /*Set the status back to off*/
+            });
+
+            console.log('tttttttttttttttttttttttttt');
+          responsiveVoice.speak('欢迎莅临无锡东元精密机械有限公司。本公司投资金额3750万美金，注册资本3000万美金。总占地面积80亩，本期投资厂房占地面积40亩。于二零一六 年十月获得LEED金级认证。' , 'Chinese Female', {rate: 0.95}, {volume: 3});
+
+            console.log('222222222');
+
+        });
+
+
+    console.log('4444444444444');
+    $('.slider-mainnav').slick({
+        autoplay:true,
+        touchMove:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-mainfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-mainfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+
+        asNavFor: '.slider-mainnav'
+    });
+
+
+    $('#music-button').toggle(
+            function () {
+                document.getElementById('playMusic').play();
+            },
+            function () {
+                document.getElementById('playMusic').pause();
+            }
+    );
+
+</script>
+
+
+
+
+
+<!--<div class=" row no-margin breadcrumb-fixed-50blank   ">-->
+
+    <!--&lt;!&ndash;<div id="breadcrumb" class="breadcrumb   ">&ndash;&gt;-->
+        <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;&lt;!&ndash;<li><a href="#1"> 主页</a></li>&ndash;&gt;&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--</div>-->
+
+<div class="  row no-margin speed-main-background h" style="width:1920px;height: 959px;
+    background-image:url(assets/img/speed/LEEDimages/beijingtu_02.png); ">
+
+    <div class="col-lg-9 margin-top-10 margin-right-30" ng-controller="FlotCtrl" style="margin-left: 5px;width: 1250px">
+        <div class="row" style="height: 550px; ">
+            <div class="margin-left-5 ">
+
+
+                <!--<span class="margin-left-40 font-190 ">趋势</span>-->
+                <div class="widget" style=" margin-top: 10px; height: 450px;opacity: 0.8;">
+                    <div class="widget-header " >
+                        <span class="widget-caption"></span>
+                        <!--Stacked Chart-->
+                        <!--<div class="widget-buttons">-->
+                            <!--<a href="" widget-maximize></a>-->
+                            <!--<a href="" widget-collapse></a>-->
+                            <!--<a href="" widget-dispose></a>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="widget-body" style=" height: 450px;  ">
+                        <highchart    id="chart1"  config="chartConfig"></highchart>
+                        <!--<div ui-jq="plot" style=" height: 510px ;"-->
+                             <!--ui-options="{{StackedChartData}}, {{StackedChartOptions}}" class="chart chart-lg"></div>-->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="row " style=" margin-top: -23px">
+
+            <img  src="assets/img/speed/LEEDimages/tanpailiang_04.png"  ng-controller="FlotCtrl">
+
+                <p   style="margin-left:150px ; margin-top:-100px; color:saddlebrown ;font-size: 50px"> {{savingenergy}}</p>
+
+                <p   style="margin-left:350px ; margin-top:-30px; color:saddlebrown ;font-size: 50px"> {{savingtreenumber}}</p>
+            </img>
+
+            <img  src="assets/img/speed/LEEDimages/biaodianliang_07.png"  style="margin-left:700px ; margin-top:-130px; color:saddlebrown ;font-size: 50px">
+
+                <p   ng-controller="bacnetTagController" style="margin-left:900px ; margin-top:-100px; color:saddlebrown ;font-size: 50px"> {{totalmeter}}</p>
+
+            </img>
+        </div>
+
+
+
+
+    </div>
+    <div class="col-lg-3  margin-top-5 " ng-controller="FlotCtrl" >
+        <div class="row"  style=" margin-top: 10px">
+            <!--<video class="margin-left-30" style="width:600px;height: 330px" autoplay="autoplay" loop="loop"-->
+                   <!--poster="https://cdn1.evernote.com/evernote.com/img/homepage/homepage-hero-video-desktop-still.jpg">-->
+                <!--<source class="webm" type="video/webm" src="assets/videos/homepage-hero-video.webm">-->
+                <!--&lt;!&ndash;<source class="mp4" type="video/mp4" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video.mp4">&ndash;&gt;-->
+            <!--</video>-->
+
+            <!--<img src="assets/img/speed/LEEDimages/VEDIO_03.png">-->
+
+
+
+            <div class="slider slider-mainfor center">
+
+                <!--<div><img src="assets/img/speed/LEEDimages/banche_03.jpg"></div>-->
+                <!--<div><img src="assets/img/speed/LEEDimages/banche2_03.jpg"></div>-->
+                <!--<div><img src="assets/img/speed/LEEDimages/banche_03.jpg"></div>-->
+                <!--<div><img src="assets/img/speed/LEEDimages/banche2_03.jpg"></div>-->
+            </div>
+            <div class="slider slider-mainnav    center" style="width: 562px;height: 360px">
+
+                <div><img src="assets/img/speed/dianji01_06.png"></div>
+                <div><img src="assets/img/speed/dianji02_06.png"></div>
+                <div><img src="assets/img/speed/dianji03_06.png"></div>
+                <div><img src="assets/img/speed/dianji04_06.png"></div>
+                <div><img src="assets/img/speed/dianji05_06.png"></div>
+                <div><img src="assets/img/speed/dianji06_06.png"></div>
+                <div><img src="assets/img/speed/dianji07_06.png"></div>
+                <div><img src="assets/img/speed/dianji08_06.png"></div>
+                <div><img src="assets/img/speed/dianji09_06.png"></div>
+                <div><img src="assets/img/speed/dianji10_06.png"></div>
+                <div><img src="assets/img/speed/dianji11_06.png"></div>
+                <div><img src="assets/img/speed/dianji12_06.png"></div>
+                <div><img src="assets/img/speed/dianji13_06.png"></div>
+            </div>
+        </div>
+        <div class="row " style=" margin-top: -50px">
+
+            <video class="margin-left-10" style="width:570px;height: 300px;margin-top: 45px" autoplay="autoplay" loop="loop"
+            poster="assets/img/speed/poster.png">
+            <source class="webm" type="video/webm" src="assets/videos/2.mp4">
+            <!--<source class="mp4" type="video/mp4" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video.mp4">-->
+            </video>
+
+        </div>
+    </div>
+
+
+    <div class="row margin-top-50" ng-controller="DashboardCtrl">
+        <div class="balloon">
+            <div style="margin-left: 150px;">
+                <a ui-sref="app.leedmain" href="#/app/leedmain">
+                    <img class="flashimg" style="z-index: -9999;margin-top: 70px" src="assets/img/speed/button_01_50.png">
+                </a>
+            </div>
+            <div style="margin-left: 300px;">
+                <a ui-sref="app.energysavingmotor" href="#/app/energysavingmotor">
+                    <img class="flashimg" style="z-index: -9999;margin-top: 70px" src="assets/img/speed/button_01_52.png">
+                </a>
+            </div>
+            <div style="margin-left: 450px;margin-top: -100px">
+                <a   ng-click="clickCN()">
+                    <img  class="flashimg" style=" z-index: -9999;margin-top: 70px" src="assets/img/speed/icon_107.png">
+                </a>
+            </div>
+
+
+            <div style="margin-left: 550px;">
+                <a  ui-sref="app.indoormain">
+                    <img class="flashimg" style=" z-index: -9999;margin-top: 70px" src="assets/img/speed/button_01_55.png">
+                </a>
+            </div>
+
+            <div style="margin-left: 500px;">
+                 <a  href="views/partials/madayun.html" >
+                    <img class="flashimg" style=" z-index: -9999;margin-top: 70px" src="assets/img/speed/button_01_57.png">
+                 </a>
+            </div>
+            <div style="margin-left: 240px;" ng-show="chuangneng">
+                <a href="views/partials/chuangneng.html">
+                    <img ng-show="chuangneng" ng-class="chuangneng==true?flashimg:' '" style="z-index: -8888;margin-top: 70px" src="assets/img/speed/taiyangneng.png">
+                </a>
+            </div>
+            <div style="margin-left: 320px;" ng-show="chuangneng">
+                <a  ui-sref="app.fengneng">
+                    <img ng-show="chuangneng" ng-class="chuangneng==true?flashimg:' '" style="z-index: -8888;margin-top: 70px" src="assets/img/speed/fengneng.png">
+                </a>
+            </div>
+        </div>
+
+
+            <img  src="assets/img/speed/leed_01.png" style="margin-left: 1250px;margin-top: 90px;opacity:0.58; z-index: 999; "  >
+                <div class="speaker" style="margin-left: 1630px;margin-top: -220px;"></div>
+            <img  src="assets/img/speed/exit_16.png" confirmed-click="goFullscreen()"
+              ng-confirm-click="确认退出SPEED?" style="margin-left: 1810px;margin-top: -10px;opacity:0.8; z-index: 999;"/>
+                <audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+                       src="assets/sound/leednengyuan.mp3">
+                </audio>
+
+
+            </img>
+
+
+    </div>
+</div>
+
+</div>

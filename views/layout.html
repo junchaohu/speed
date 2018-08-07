@@ -1,0 +1,90 @@
+﻿<!--&lt;!&ndash; Loading Container &ndash;&gt;-->
+<!--&lt;!&ndash;<div class="loading-container" data-ng-include=" 'views/partials/loading.html' "></div>&ndash;&gt;-->
+<!--&lt;!&ndash;  /Loading Container &ndash;&gt;-->
+
+<!--&lt;!&ndash; Navbar &ndash;&gt;-->
+
+<!--&lt;!&ndash; /Navbar &ndash;&gt;-->
+
+<!--<div>-->
+   <!--<div class="navbar navbar-fixed-top" data-ng-include=" 'views/partials/topbar.html' "></div>-->
+
+
+    <!--&lt;!&ndash; Page Container &ndash;&gt;-->
+
+        <!--<div class="page-body" ui-view/>-->
+
+    <!--&lt;!&ndash;<div class="navbar {{settings.fixed.navbar ? 'navbar-fixed-top' : ''}}" data-ng-include=" 'views/partials/topbar.html' "></div>&ndash;&gt;-->
+    <!--&lt;!&ndash; /Page Container &ndash;&gt;-->
+    <!--&lt;!&ndash; Main Container &ndash;&gt;-->
+
+<!--</div>-->
+
+
+
+<!-- Loading Container -->
+<!--<div class="loading-container" data-ng-include=" 'views/partials/loading.html' "></div>-->
+<!--  /Loading Container -->
+
+<!-- Navbar -->
+
+<!-- /Navbar -->
+
+<!-- Loading Container -->
+<div class="loading-container" data-ng-include=" 'views/partials/loading.html' "></div>
+<!--  /Loading Container -->
+
+<!-- Navbar -->
+<!--<div class="navbar  " data-ng-include=" 'views/partials/navbar.html' "></div>-->
+<!-- /Navbar -->
+
+<div class="speedcontainer ">
+    <!-- Page Container -->
+    <div class="speedcontainer">
+        <!-- Page Sidebar -->
+        <!--<div class="page-sidebar {{settings.fixed.sidebar ? 'sidebar-fixed' : ''}}" id="sidebar" data-ng-include=" 'views/partials/sidebar.html' ">-->
+        <!--</div>-->
+        <!-- /Page Sidebar -->
+        <!-- Chat Bar -->
+        <!--<div id="chatbar" class="page-chatbar" data-ng-include=" 'views/partials/chatbar.html' ">-->
+        <!--</div>-->
+        <!-- /Chat Bar -->
+        <!-- Page Content -->
+        <div class="">
+            <!-- Page Breadcrumb -->
+            <!--<div class="page-breadcrumbs {{settings.fixed.breadcrumbs ? 'breadcrumbs-fixed' : ''}}" data-ng-include=" 'views/partials/breadcrumbs.html' ">-->
+            <!--</div>-->
+            <!-- /Page Breadcrumb -->
+            <!-- Page Header -->
+
+
+            <!-- /Page Header -->
+            <!-- Page Body -->
+            <!--<div class="page-body">-->
+
+                <div   data-ng-include=" 'views/partials/topbar.html' "></div>
+                <!-- Your Content Goes Here -->
+
+            <div ng-controller="DashboardCtrl">
+
+
+                <div ui-view=""></div>
+                <!--<div ui-view="leedmain"></div>-->
+
+
+                <!--<div class="row speed-main-bottom no-margin"   style="width:1920px;height: 150px">&lt;!&ndash;<div class="row no-gutter equal-height-columns">&ndash;&gt;-->
+
+                <!--</div>-->
+            </div>
+            <!--</div>-->
+            <!--<div class="row  no-margin speed-main-company"    > -->
+<!--<p class="margin-top-5 margin-left-10" style=" font-size: 20px;">Copyright Johnson Controls 2016</p>-->
+            <!--</div>-->
+            <!-- /Page Body -->
+        </div>
+        <!-- /Page Content -->
+    </div>
+    <!-- /Page Container -->
+    <!-- Main Container -->
+
+</div>

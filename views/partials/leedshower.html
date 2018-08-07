@@ -1,0 +1,110 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-showernav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        asNavFor: '.slider-showerfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-showerfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-showernav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+
+    responsiveVoice.speak('我厂于东门附近设有自行车停车位，鼓励员工骑行上下班，降低汽车尾气排放污染。与此配套，在厂房南侧设有男女淋浴各一间，方便员工使用。' , 'Chinese Female', {rate: 0.95}, {volume: 3});
+
+</script>
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/kechixufazhan.mp3">
+</audio>
+<div class=" speed-main-contentpage">
+<div class="row no-margin  speed-main-contentpage-minheight" >
+
+
+    <div class="col-lg-7  margin-top-20">
+
+        <div class="slider slider-showerfor center">
+            <div><img class="slickimageheigh" src="assets/img/speed/LEEDimages/1.3.1big.png"></div>
+            <div><img class="slickimageheigh" src="assets/img/speed/LEEDimages/1.3.2big.png"></div>
+            <div><img class="slickimageheigh" src="assets/img/speed/LEEDimages/1.3.3big.png"></div>
+
+        </div>
+        <div class="slider slider-showernav    margin-left-70 center" style="  width:1000px;">
+
+            <div><img src="assets/img/speed/LEEDimages/1.3-1.png"></div>
+            <div><img src="assets/img/speed/LEEDimages/1.3-2.png"></div>
+            <div><img src="assets/img/speed/LEEDimages/1.3-3.png"></div>
+        </div>
+    </div>
+
+    <!--<div class="slider slider-for">-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="g" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="g" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--</div>-->
+    <!--<div class="slider slider-nav">-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/banche5_07.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/banche5_07.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--</div>-->
+
+
+    <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+       <p class="speedsontentTitle  margin-top-30 big " style="margin-left:80px;font-weight: bold;"> 淋浴设施及自行车位</p>
+        <p class="speedsontentTitle  margin-top-30 big " style="margin-left:80px; font-size: 20px;color: #7a7a7a">
+
+     </p>
+        <div>
+            <p class="speedsontentTitle  margin-top-30 big "
+               style="margin-left:100px;font-weight: bold; color: #4469aa">
+                淋浴设施及自行车位</p>
+            <p class="speedsontentTitle  margin-top-10 big "
+               style="font-size:24px;color:#2890c6;margin-left:100px;">
+                我司鼓励员工自行车上下班。与此配套，<br>我们在厂房内设置了淋浴间，鼓励员工骑行后使用。</p>
+
+
+
+
+
+        </div>
+        <!--<div><img src="assets/img/speed/LEEDimages/banche1.png"></div>-->
+    </div>
+
+</div>
+
+<div ui-view="leedfooter"></div>
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+    <div >
+        <ul id="breadcrumb"   class="ulbreadmargin" >
+
+            <li><a ui-sref="app.dashboard"> <i class="fa fa-home"></i>
+                主页</a></li>
+            <li><a ui-sref="app.leedmain"> LEED</a></li>
+            <li><a href="#"> 可持续选址及规划</a></li>
+            <li><a href="#"> 淋浴设施及自行车位</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>

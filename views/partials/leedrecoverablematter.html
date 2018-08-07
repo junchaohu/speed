@@ -1,0 +1,87 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-recengnav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-recengfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-recengfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-recengnav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+</script>
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/leedcailiao.mp3">
+</audio>
+<div class="  speed-main-contentpage"   >
+<div class="row no-margin speed-main-contentpage-minheight"   >
+
+
+    <div class="col-lg-7  margin-top-20">
+
+
+    </div>
+
+
+    <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+
+        <div class="slider slider-recengfor margin-left-20">
+
+            <div>
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:100px;font-weight: bold; color: #4469aa">
+                   </p>
+                <p class="speedsontentTitle  margin-top-10 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;">
+                    </p>
+
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:100px;font-weight: bold; color: #4469aa">
+                    可回收物品的储存与收集</p>
+                <p class="speedsontentTitle  margin-top-10 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;"> 早7:30
+                    厂房南侧专门设置了回收区域，回收的物品有纸、塑料、玻璃、金属和波纹板。我厂与回收公司签订定期收购协议，确保回收材料及时回收并得以再使用</p>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+<div ui-view="leedfooter"/>
+
+
+
+    <div class=" row no-margin breadcrumb-fixed-50   ">
+
+        <div  >
+            <ul id="breadcrumb"   class="ulbreadmargin" >
+
+                <li><a ui-sref="app.dashboard"> <i class="fa fa-home"></i>主页</a></li>
+                <li><a ui-sref="app.leedmain"> LEED</a></li>
+                <li><a href="#"> 材料与资源</a></li>
+                <li><a href="#"> 可回收物品的储存与收集</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>

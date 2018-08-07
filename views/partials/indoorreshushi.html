@@ -1,0 +1,61 @@
+﻿
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/leedmain.mp3">
+</audio>
+<div class=" speed-main-contentpage"   >
+<div class="row no-margin speed-main-contentpage-minheight" ng-controller="IndoorCtrl"   >
+    <div class="col-lg-7 margin-top-20 margin-left-10">
+
+        <div class="widget" >
+
+            <div class="widget-body" >
+                <highchart    config="chartConfig"></highchart>
+            </div>
+            <div class="hr-line-dashed"></div>
+
+            <div class="buttons-preview">
+                <div class="btn-group btn-group-justified">
+                    <a ng-click="getDataFromAPI(rsh[0])" class="btn btn-default btn-lg">J-5轴：条料区</a>
+                    <a ng-click="getDataFromAPI(rsh[1])" class="btn btn-default btn-lg">J-3轴: 叉车区</a>
+                    <a ng-click="getDataFromAPI(rsh[2])" class="btn btn-default btn-lg">G-3轴: B1冲床</a>
+                    <a ng-click="getDataFromAPI(rsh[3])" class="btn btn-default btn-lg">F-5轴: 落料冲床</a>
+                    <a ng-click="getDataFromAPI(rsh[4])" class="btn btn-default btn-lg">C-3轴: 半成品区</a>
+                    <a ng-click="getDataFromAPI(rsh[5])" class="btn btn-default btn-lg">C-5轴: 成品区</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+
+
+
+            <img src="assets/img/speed/indoorimages/reshushi_03.png">  <!--class="margin-top-50  ;"style="margin-left:100px;"-->
+                <p   style="margin-left:410px ; margin-top:-200px; color:saddlebrown ;font-size: 50px"> {{current[0]}}</p>
+
+                <p   style="margin-left:410px ; margin-top:80px; color:saddlebrown ;font-size: 50px"> {{current[1]}}</p>
+            </img>
+            <img src="assets/img/speed/indoorimages/reshushi_05.png" style="  margin-top:200px;">  <!-- style="margin-left:200px ; margin-top:-200px;"class="margin-top-50  ;"style="margin-left:100px;"-->
+                <p   style="margin-left:410px ; margin-top:-195px; color:saddlebrown ;font-size: 50px"> {{outside[0]}}</p>
+
+                <p   style="margin-left:410px ; margin-top:75px; color:saddlebrown ;font-size: 50px"> {{outside[1]}}</p>
+            </img>
+
+    </div>
+</div>
+<div ui-view="indoorfooter" ng-controller="DashboardCtrl"></div>
+<div class=" row no-margin breadcrumb-fixed-50   " >
+
+    <div  >
+        <ul    id="breadcrumb"   class="ulbreadmargin"  >
+
+            <li><a  ui-sref="app.dashboard" > <i class="fa fa-home"></i>主页</a></li>
+            <li><a   ui-sref="app.indoormain" > 室内环境</a></li>
+            <li><a   ui-sref="" > 热舒适</a></li>
+        </ul>
+    </div>
+
+</div>
+</div>

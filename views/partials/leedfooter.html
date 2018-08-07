@@ -1,0 +1,174 @@
+﻿<div class="row   equal-height-columns     no-padding bo-border " style=" width:1920px;height: 175px"
+     ng-controller="DashboardCtrl">
+    <div class="col-lg-3  ">
+        <div class="" uib-dropdown style="margin-left: 50px">
+
+            <a uib-dropdown-toggle type="button" ng-click="clickFooterButton('firstshow')">
+                <img ng-show="firstshow"
+                     ng-class="firstshow==true?'active-img inner item-component above-horizon rotateimg  img-responsive center-block':' '"
+                     style="position:absolute;margin-top: -15px;margin-left: 50px" class=" "
+                     src="assets/img/speed/LEEDimages/rotate_33.png">
+                <img style="position:absolute;;margin-top: 0px;margin-left: 53px"
+                     class="inactive-img inner    flashimg img-responsive center-block  "
+                     src="assets/img/speed/LEEDimages/leed01_03.png">
+            </a>
+
+            <ul class="flyout  no-margin no-padding no-border" uib-dropdown-menu>
+                <li id="box1" class="animated rollIn">
+                    <div style="">
+                        <a ui-sref="app.leedtropicalisland">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_67.png" style="z-index: -90">
+                        </a>
+                    </div>
+                </li>
+                <li id="box2" class="animated rotateInDownRight">
+                    <div style="">
+                        <a ui-sref="app.leedpriorityparking">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_68.png">
+                        </a>
+                    </div>
+                </li>
+                <li id="box3" class="animated rotateInDownLeft">
+                    <div style="">
+                        <a ui-sref="app.leedshower">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_69.png">
+                        </a>
+                    </div>
+                </li>
+                <li id="box4" class="animated rollIn">
+                    <div style="">
+                        <a ui-sref="app.leedshuttlebus">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_66.png">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-3 ">
+        <div class="" uib-dropdown style="margin-left: 50px">
+            <a uib-dropdown-toggle type="button" ng-click="clickFooterButton('secondshow')">
+                <img ng-show="secondshow"
+                     ng-class="secondshow==true?'active-img inner item-component above-horizon rotateimg  img-responsive center-block':' '"
+                     style="position:absolute;margin-top: -15px;margin-left: 50px" class=" "
+                     src="assets/img/speed/LEEDimages/rotate_36.png">
+                <img style="position:absolute;;margin-top: 0px;margin-left: 53px"
+                     class="inactive-img inner    flashimg img-responsive center-block  "
+                     src="assets/img/speed/LEEDimages/leed01_05.png">
+            </a>
+
+            <ul class="flyout  no-margin no-padding no-border" uib-dropdown-menu>
+                <li id="box5"   class="animated rollIn">
+                    <div style="">
+                        <a ui-sref="app.leedsavewater">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_62.png" style="z-index: -90">
+                        </a>
+                    </div>
+                </li>
+                <li id="box6"  class="animated rotateInDownRight">
+                    <div style="">
+                        <a ui-sref="app.leedirrigation">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_64.png">
+                        </a>
+                    </div>
+                </li>
+                <li id="box7"  class="animated rotateInDownLeft">
+                    <div style="">
+                        <a ui-sref="app.leedrainwater">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_63.png">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+       </div>
+    </div>
+
+    <div class="col-lg-3 ">
+        <div class="" uib-dropdown style="margin-left: 50px">
+
+            <a uib-dropdown-toggle type="button" ng-click="clickFooterButton('thirdshow')">
+                <img ng-show="thirdshow"
+                     ng-class="thirdshow==true?'active-img inner item-component above-horizon rotateimg  img-responsive center-block':' '"
+                     style="position:absolute;margin-top: -15px;margin-left: 50px" class=" "
+                     src="assets/img/speed/LEEDimages/rotate_38.png">
+                <img style="position:absolute;;margin-top: 0px;margin-left: 53px"
+                     class="inactive-img inner    flashimg img-responsive center-block  "
+                     src="assets/img/speed/LEEDimages/leed01_07.png">
+            </a>
+
+            <ul class="flyout  no-margin no-padding no-border" uib-dropdown-menu>
+                <li  class="animated rollIn">
+                    <div style="">
+                        <a ui-sref="app.leedhighmotor">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_95.png" style="z-index: -90">
+                        </a>
+                    </div>
+                </li>
+                <li   class="animated rotateInDownRight">
+                    <div style="">
+                        <a ui-sref="app.leedledlight">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_97.png">
+                        </a>
+                    </div>
+                </li>
+                <li  class="animated rotateInDownLeft">
+                    <div style="">
+                        <a ui-sref="app.leedheatpump">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_99.png">
+                        </a>
+                    </div>
+                </li>
+                <li   class="animated rollIn">
+                    <div style="">
+                        <a ui-sref="app.leedrenewablesource">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_98.png">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-3 ">
+        <div class="" uib-dropdown style="margin-left: 50px">
+
+            <a uib-dropdown-toggle type="button" ng-click="clickFooterButton('fouthshow')">
+                <img ng-show="fouthshow"
+                     ng-class="fouthshow==true?'active-img inner item-component above-horizon rotateimg  img-responsive center-block':' '"
+                     style="position:absolute;margin-top: -15px;margin-left: 50px" class=" "
+                     src="assets/img/speed/LEEDimages/rotate_40.png">
+                <img style="position:absolute;;margin-top: 0px;margin-left: 53px"
+                     class="inactive-img inner    flashimg img-responsive center-block  "
+                     src="assets/img/speed/LEEDimages/leed01_09.png">
+            </a>
+
+            <ul class="flyout  no-margin no-padding no-border" uib-dropdown-menu>
+                <li  class="animated rollIn">
+                    <div style="">
+                        <a ui-sref="app.leedfsc">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_61.png" style="z-index: -90">
+                        </a>
+                    </div>
+                </li>
+                <li   class="animated rotateInDownRight">
+                    <div style="">
+                        <a ui-sref="app.leedrecoverablematter">
+                            <img src="assets/img/speed/LEEDimages/leed_bubble_59.png">
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</div>

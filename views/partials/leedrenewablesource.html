@@ -1,0 +1,119 @@
+﻿
+<script type="text/javascript">
+    console.log('00000');
+    $('.slider-myrenewnav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-myrenewfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('1111');
+    $('.slider-myrenewfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-myrenewnav'
+    });
+
+</script>
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/background.mp3">
+</audio>
+<div class="speed-main-contentpage">
+<div class="row no-margin speed-main-contentpage-minheight"   >
+
+
+    <div class="col-lg-7  margin-top-20">
+    <div class="slider slider-myrenewfor center">
+        <div><img  class="slickimageheigh"   src="assets/img/speed/LEEDimages/3.4-1.png"></div>
+        <div><img  class="slickimageheigh"   src="assets/img/speed/LEEDimages/3.4-2.png"></div>
+        <div><img  class="slickimageheigh"   src="assets/img/speed/LEEDimages/3.4-3.png"></div>
+        <div><img  class="slickimageheigh"   src="assets/img/speed/LEEDimages/3.4-4.png"></div>
+        <div><img  class="slickimageheigh"   src="assets/img/speed/LEEDimages/3.4-5.png"></div>
+    </div>
+    <div class="slider slider-myrenewnav   margin-left-70 center" style="  width:1000px;">
+
+        <div><img src="assets/img/speed/LEEDimages/3.4-1.png"></div>
+        <div><img src="assets/img/speed/LEEDimages/3.4-2.png"></div>
+        <div><img src="assets/img/speed/LEEDimages/3.4-3.png"></div>
+        <div><img src="assets/img/speed/LEEDimages/3.4-4.png"></div>
+        <div><img src="assets/img/speed/LEEDimages/3.4-5.png"></div>
+    </div>
+    </div>
+
+
+    <!--<div class="slider slider-for">-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="g" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="g" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--</div>-->
+    <!--<div class="slider slider-nav">-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/banche5_07.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/banche5_07.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--</div>-->
+
+
+    <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+
+        <div class="slider slider-myrenewfor margin-left-20">
+
+            <div>
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:100px;font-weight: bold; color: #4469aa">
+                    </p>
+                <p class="speedsontentTitle  margin-top-10 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;">
+                     </p>
+
+
+
+            <div class="hr-line-dashed"></div>
+
+            <div>
+                <p class="speedsontentTitle  margin-top-50 big "
+                   style="margin-top: 150px; margin-left:90px;font-weight: bold; color: #4469aa">
+                    可再生能源</p>
+                <p class="speedsontentTitle  margin-top-10 big "
+                   style="font-size:24px;color:#2890c6;margin-left:90px;margin-right: 10px">
+                    本项目的可再生能源采取太阳能发电与风力发电相结合的方式，其中屋顶太阳电池组件方阵由192块260Wp组件组成，
+                    总安装面积约400平方米。电站主要满足厂房内生产设备、办公区域、厂区内照明等电器设备用电，并与电网相连结，
+                    采用用户侧并网方式，太阳能供电不足时有电网补充，与电网形成互补，缓解高峰用电压力，具有调峰作用</p>
+
+            </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+<div ui-view="leedfooter"></div>
+
+
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+    <div  >
+        <ul id="breadcrumb"   class="ulbreadmargin" >
+
+            <li><a ui-sref="app.dashboard"> <i class="fa fa-home"></i>主页</a></li>
+            <li><a ui-sref="app.leedmain"> LEED</a></li>
+            <li><a href="#"> 能源与大气</a></li>
+            <li><a href="#"> 可再生能源</a></li>
+
+        </ul>
+    </div>
+
+</div>
+
+</div>

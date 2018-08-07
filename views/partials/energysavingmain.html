@@ -1,0 +1,55 @@
+﻿
+
+<div class=" row no-margin breadcrumb-fixed-50   " >
+
+    <div id="breadcrumb"  class="breadcrumb   "   >
+        <ul   >
+
+            <li><a  ui-sref="app.dashboard" > 主页</a></li>
+            <li><a   ui-sref=".indoormain" > 节能量展示</a></li>
+        </ul>
+    </div>
+
+</div>
+<div class="row no-margin speed-main-contentpage"  ng-controller="FlotCtrl" style="width:1920px;height: 759px">
+    <div class="col-lg-7 margin-top-20 margin-left-10">
+        <span class="margin-left-40 font-190  ">趋势</span>
+        <div class="hr-line-dashed"></div>
+        <div class="widget">
+
+            <div class="widget-body">
+                <div  ui-jq="plot" style="height: 400px" ui-options="{{StackedChartData}}, {{StackedChartOptions}}" class="chart chart-lg"></div>
+            </div>
+            <!--<div class="hr-line-dashed"></div>-->
+
+            <!--<div class="buttons-preview">-->
+                <!--<div class="btn-group btn-group-justified">-->
+                    <!--<a href="#" class="btn btn-default btn-lg">热舒适</a>-->
+                    <!--<a href="#" class="btn btn-default btn-lg">声环境</a>-->
+                    <!--<a href="#" class="btn btn-default btn-lg">光环境</a>-->
+                    <!--<a href="#" class="btn btn-default btn-lg">PM2.5</a>-->
+                    <!--<a href="#" class="btn btn-default btn-lg">CO2</a>-->
+                <!--</div>-->
+
+
+            <!--</div>-->
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="row">
+            <video class="margin-left-30" style="width:600px;height: 330px"  autoplay="autoplay" loop="loop"  poster="https://cdn1.evernote.com/evernote.com/img/homepage/homepage-hero-video-desktop-still.jpg">
+                <source class="webm" type="video/webm" src="assets/videos/homepage-hero-video.webm">
+                <!--<source class="mp4" type="video/mp4" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video.mp4">-->
+            </video>
+
+            <!--<img src="assets/img/speed/LEEDimages/VEDIO_03.png">-->
+        </div>
+        <div class="row " >
+
+            <img  style="width:650px;height: 300px"    src="assets/img/speed/LEEDimages/tanpailiang_04.png">
+        </div>
+    </div>
+</div>
+<div ui-view="energysavingmainfooter" ng-controller="DashboardCtrl"></div>
+

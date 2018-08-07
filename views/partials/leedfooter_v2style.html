@@ -1,0 +1,353 @@
+﻿<div class="row   equal-height-columns    no-margin no-padding bo-border " style="width:1920px;height: 150px" ng-controller="DashboardCtrl">
+    <!--<div class="row no-gutter equal-height-columns">-->
+    <div class="btn-group no-margin no-padding no-border">
+
+        <div class="btn-group dropup    no-margin no-padding no-border">
+
+            <a class="btn btn-default dropdown-toggle shiny no-margin no-padding no-border" data-toggle="dropdown">
+                <div class="speed_MainButton{{CheckedShuttle}}  no-margin no-padding no-border">
+
+                    <img src="assets/img/speed/LEEDimages/icon_10.png" class=" margin-top-14 margin-bottom-10">
+                    <p class="speed_MainButtonText    margin-bottom-16 "> 可持续选址及规划
+                    </p>
+                </div>
+            </a>
+
+            <ul class="dropdown-menu  dropdown-mychecked  no-margin no-padding no-border" role="menu"
+                aria-labelledby="btnGroupVerticalDrop1">
+                <li>
+                    <a  ui-sref="app.leedtropicalisland" class="  no-margin no-padding no-border">
+                        <div class="speed_content  ">
+
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/small_04_31.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20  "> 热岛效应</p>
+                                <p class="speedsontentText margin-top-30 big ">SRI=94,反射比=0.76<br>发射率=0.9
+                                    <br> 自行车棚铺设太阳能板
+                                    。</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a  ui-sref="app.leedpriorityparking"   class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/small_04_48.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20  "> 优先车位</p>
+                                <p class="speedsontentText margin-top-25 big ">
+                                    指定5个优先车位供<br>低排放车辆使用；指定5个<br>优先车位供拼车使用
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a   ui-sref="app.leedshower"  class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/small_04_62.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big ">淋浴设施及<br>自行车位</p>
+                                <p class="speedsontentText margin-top-25 big ">设有男女淋浴间各一个<br>，鼓励员工自行车上下班
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+
+                    <a   ui-sref="app.leedshuttlebus" class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/small_04_76.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 班车</p>
+                                <p class="speedsontentText margin-top-25 big ">工厂提供6条线路班车，<br>减少私家汽车使用数量
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="btn-group dropup    no-margin no-padding no-border">
+
+            <a class="btn btn-default dropdown-toggle shiny no-margin no-padding no-border" data-toggle="dropdown">
+                <div class="speed_MainButton{{CheckedWater}}  no-margin no-padding no-border">
+
+                    <img src="assets/img/speed/LEEDimages/icon_19.png" class=" margin-top-14 margin-bottom-10">
+                    <p class="speed_MainButtonText   margin-bottom-16 "> 节约水资源</p>
+                </div>
+            </a>
+
+            <ul class="dropdown-menu  dropdown-mychecked  no-margin no-padding no-border" role="menu"
+                aria-labelledby="btnGroupVerticalDrop1">
+                <li>
+                    <a ui-sref="app.leedsavewater" class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/jieyueshuiziyuan_03.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 节水洁具</p>
+                                <p class="speedsontentText margin-top-25 big ">选用双重马桶、感应<br>水龙头等节水器具，<br>综合节水量达45%
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a  ui-sref="app.leedirrigation" class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/jieyueshuiziyuan_06.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 节水灌溉</p>
+                                <p class="speedsontentText margin-top-25 big ">选用本地耐旱植物，<br>结合雨水灌溉，<br>无饮用水消耗
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a  ui-sref="app.leedrainwater" class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/jieyueshuiziyuan_08.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 雨水回收</p>
+                                <p class="speedsontentText margin-top-25 big ">将收集的雨水进行处理，<br>用于冲厕、绿化灌溉等
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="btn-group dropup    no-margin no-padding no-border">
+
+            <a class="btn btn-default dropdown-toggle shiny no-margin no-padding no-border" data-toggle="dropdown">
+                <div class="speed_MainButton{{CheckedEnergy}}  no-margin no-padding no-border">
+
+                    <img src="assets/img/speed/LEEDimages/icon_17.png" class=" margin-top-14 margin-bottom-10">
+                    <p class="speed_MainButtonText   margin-bottom-16 "> 能源与大气</p>
+                </div>
+            </a>
+
+            <ul class="dropdown-menu  dropdown-mychecked  no-margin no-padding no-border" role="menu"
+                aria-labelledby="btnGroupVerticalDrop1">
+                <li>
+                    <a ui-sref="app.leedhighmotor" class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/small_08_03.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 高效电机</p>
+                                <p class="speedsontentText margin-top-25 big ">增加：压缩机热回收<br>
+                                    电机等级IE3=66
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a  ui-sref="app.leedledlight"  class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/small_08_06.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> LED照明系统</p>
+                                <p class="speedsontentText margin-top-25 big ">增加：测量与验证<br>
+                                    全部选用LED灯具，<br>比常规灯具节能50%以上
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.leedheatpump"  class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/small_08_08.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 地源热泵</p>
+                                <p class="speedsontentText margin-top-25 big ">增加：制冷剂<br>
+                                    制冷量334kw，<br>COP=5.68
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.leedrenewablesource"  class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big margin-top-10">
+                                <img src="assets/img/speed/LEEDimages/small_08_10.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 可再生能源</p>
+                                <p class="speedsontentText margin-top-25 big ">屋面及自行车棚铺设<br>太阳能光伏板；路面设有<br>风力发电
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="btn-group dropup    no-margin no-padding no-border">
+
+            <a class="btn btn-default dropdown-toggle shiny no-margin no-padding no-border" data-toggle="dropdown">
+                <div class="speed_MainButton{{CheckedResource}}  no-margin no-padding no-border">
+
+                    <img src="assets/img/speed/LEEDimages/icon_13.png" class=" margin-top-14 margin-bottom-10">
+                    <p class="speed_MainButtonText   margin-bottom-16 "> 材料与资源</p>
+                </div>
+            </a>
+
+            <ul class="dropdown-menu  dropdown-mychecked  no-margin no-padding no-border" role="menu"
+                aria-labelledby="btnGroupVerticalDrop1">
+                <li>
+                    <a ui-sref="app.leedfsc"  class="  no-margin no-padding no-border">
+                        <div class="speed_content  ">
+
+                            <div class="col-lg-5 big">
+                                <img src="assets/img/speed/LEEDimages/smallpic_55.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20  "> FSC认证木材</p>
+                                <p class="speedsontentText margin-top-30 big ">%50以上的木质产品是<br>由森林管理委员会认证<br>的。</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </li>
+                <!--<li>-->
+                <!--<a href="#" class="  no-margin no-padding no-border">-->
+                <!--<div class="speed_content">-->
+                <!--<div class="col-lg-5 big">-->
+                <!--<img src="assets/img/speed/smallpic_69.png">-->
+                <!--</div>-->
+                <!--<div class="col-lg-7 ">-->
+                <!--<p class="speedsontentTitle margin-top-20  "> 本地材料</p>-->
+                <!--<p class="speedsontentText margin-top-30 big ">建筑材料和产品20%以<br>上是在800公里范围内<br>提取、冶炼和制造的-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a ui-sref="app.leedrecoverablematter" class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big">
+                                <img src="assets/img/speed/smallpic_81.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 可回收物品的<br>储存与收集</p>
+                                <p class="speedsontentText margin-top-25 big ">分类收集可回收物,包<br>括纸、塑料、玻璃等</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="btn-group dropup    no-margin no-padding no-border">
+
+            <a class="btn btn-default dropdown-toggle shiny no-margin no-padding no-border" data-toggle="dropdown">
+                <div class="speed_MainButton{{CheckedResource}}  no-margin no-padding no-border">
+
+
+                </div>
+            </a>
+
+            <ul class="dropdown-menu  dropdown-mychecked  no-margin no-padding no-border" role="menu"
+                aria-labelledby="btnGroupVerticalDrop1">
+                <li>
+                    <a ui-sref="app.leedfsc"  class="  no-margin no-padding no-border">
+                        <div class="speed_content  ">
+
+                            <div class="col-lg-5 big">
+                                <img src="assets/img/speed/LEEDimages/smallpic_55.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20  "> FSC认证木材</p>
+                                <p class="speedsontentText margin-top-30 big ">%50以上的木质产品是<br>由森林管理委员会认证<br>的。</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </li>
+                <!--<li>-->
+                <!--<a href="#" class="  no-margin no-padding no-border">-->
+                <!--<div class="speed_content">-->
+                <!--<div class="col-lg-5 big">-->
+                <!--<img src="assets/img/speed/smallpic_69.png">-->
+                <!--</div>-->
+                <!--<div class="col-lg-7 ">-->
+                <!--<p class="speedsontentTitle margin-top-20  "> 本地材料</p>-->
+                <!--<p class="speedsontentText margin-top-30 big ">建筑材料和产品20%以<br>上是在800公里范围内<br>提取、冶炼和制造的-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a ui-sref="app.leedrecoverablematter" class="  no-margin no-padding no-border">
+                        <div class="speed_content">
+                            <div class="col-lg-5 big">
+                                <img src="assets/img/speed/smallpic_81.png">
+                            </div>
+                            <div class="col-lg-7 ">
+                                <p class="speedsontentTitle margin-top-20 big "> 可回收物品的<br>储存与收集</p>
+                                <p class="speedsontentText margin-top-25 big ">分类收集可回收物,包<br>括纸、塑料、玻璃等</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>

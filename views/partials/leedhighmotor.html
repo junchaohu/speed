@@ -1,0 +1,96 @@
+﻿
+<script type="text/javascript">
+
+    console.log('hhhhhhhhhhhh');
+
+    $( document ).ready(function() {
+
+        console.log('tttttttttttttttttttttttttt');
+        responsiveVoice.speak('高效节能电机采用新型电机设计、新工艺及新材料，通过降低电磁能、热能和机械能的损耗，提高输出效率。' , 'Chinese Female', {rate: 0.95}, {volume: 3});
+
+        console.log('222222222');
+
+    });
+
+    $('.slider-leedhighmotornav').slick({
+        autoplay:true,
+        touchMove:true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        asNavFor: '.slider-leedhighmotorfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('lllllllllllllllllllll');
+    $('.slider-leedhighmotorfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+
+        asNavFor: '.slider-leedhighmotornav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+
+
+
+</script>
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/background.mp3">
+</audio>
+<div class="speed-main-contentpage">
+<div class="row no-margin speed-main-contentpage-minheight"   >
+
+    <div class="col-lg-7  margin-top-20" style="margin-left: 400px"    >
+
+        <div class="slider slider-leedhighmotorfor center">
+
+            <div><img  style="height:470px;"    src="assets/img/speed/LEEDimages/gaoxiaodianji01_03.png"></div>
+            <div><img  style="height:470px;"    src="assets/img/speed/LEEDimages/gaoxiaodianji02_03.png"></div>
+            <div><img  style="height:470px;"    src="assets/img/speed/LEEDimages/gaoxiaodianji03_03.png"></div>
+            <div><img  style="height:470px;"    src="assets/img/speed/LEEDimages/gaoxiaodianiji04_03.png"></div>
+            <div><img  style="height:470px;"    src="assets/img/speed/LEEDimages/gaoxiaodianji05_03.png"></div>
+            <div><img  style="height:470px;"     src="assets/img/speed/LEEDimages/gaoxiaodianji06_03.png"></div>
+            <div><img  style="height:470px;"    src="assets/img/speed/LEEDimages/gaoxiaodianji07_03.png"></div>
+
+        </div>
+        <div class="slider slider-leedhighmotornav    margin-left-70 center" style="width:1000px;">
+
+            <div><img style="height:200px;"   src="assets/img/speed/LEEDimages/3.1.1.png"></div>
+            <div><img style="height:200px;"   src="assets/img/speed/LEEDimages/3.1.2.png"></div>
+            <div><img style="height:200px;"   src="assets/img/speed/LEEDimages/3.1.3.png"></div>
+            <div><img style="height:200px;"   src="assets/img/speed/LEEDimages/3.1.4.png"></div>
+            <div><img style="height:200px;"   src="assets/img/speed/LEEDimages/3.1.5.png"></div>
+            <div><img style="height:200px;"   src="assets/img/speed/LEEDimages/3.1.6.png"></div>
+            <div><img style="height:200px;"   src="assets/img/speed/LEEDimages/3.1.7.png"></div>
+        </div>
+    </div>
+
+
+</div>
+
+<div ui-view="leedfooter"></div>
+
+
+
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+    <div >
+        <ul id="breadcrumb" class="ulbreadmargin   ">
+
+            <li><a ui-sref="app.dashboard"><i class="fa fa-home"></i>主页</a></li>
+            <li><a href="#"> 能源与大气</a></li>
+            <li><a href="#"> 高效电机</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>

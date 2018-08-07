@@ -1,0 +1,76 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-navfengneng').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-forfengneng',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-forfengneng').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-navfengneng'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+</script>
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/kechixufazhan.mp3">
+</audio>
+
+<div class="row no-margin  "    >
+
+    <div class="row no-margin speed-main-contentpage2"   >
+
+
+        <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+
+            <div><img style="height: 440px"  src="assets/img/speed/fengneng_03.png"></div>
+
+            <div><img style="height: 440px"  src="assets/img/speed/fengneng_07.png"></div>
+        </div>
+
+        <div class="col-lg-7  margin-top-20">
+
+            <div class="slider slider-forfengneng center">
+
+                <div><img  style="height: 800px"class="slickimageheigh" src="assets/img/speed/fengneng_05.png"></div>
+            </div>
+            <div class="slider slider-navfengneng   margin-left-70 center" style="  width:1000px;">
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+    <div >
+        <ul  id="breadcrumb"   class="ulbreadmargin" >
+            <li><a ui-sref="app.dashboard"> <i class="fa fa-home"></i>
+                主页</a></li>
+            <li><a href="#"> 风能</a></li>
+        </ul>
+    </div>
+
+</div>

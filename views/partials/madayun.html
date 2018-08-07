@@ -1,0 +1,18 @@
+<html>
+<head>
+	
+</head>
+<body>
+<script type="text/javascript">
+    function myJsFunc() {
+        var arr = window.location.href.split("/");
+        window.location =  arr[0] + "//" + arr[2];
+    }
+</script>
+<iframe runat="server" src="http://10.128.32.6:50000" width="1920" height="1000" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<a href="#" onclick="myJsFunc();">
+    <img style=" " src="../SPEED_04.png" alt="Logo">
+</a >
+
+</body>
+</html>

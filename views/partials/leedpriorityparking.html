@@ -1,0 +1,118 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-priparkingnav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-priparkingfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-priparkingfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-priparkingnav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+
+    responsiveVoice.speak('我厂一期共有72个汽车停车位，位于厂房北门及东门附近。优先车位设置于北门入口附近，其中有5个优先车位专供低排量车位使用，5个优先车位专供拼车车位使用。我们鼓励员工使用低排量的汽车，以及拼车上下班，降低环境污染。' , 'Chinese Female', {rate: 0.95}, {volume: 3});
+
+</script>
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/kechixufazhan.mp3">
+</audio>
+<div class="speed-main-contentpage">
+    <div class="row no-margin  speed-main-contentpage-minheight"  >
+
+
+        <div class="col-lg-7  margin-top-20">
+
+            <div class="slider slider-priparkingfor center">
+
+                <div><img  class="slickimageheigh" src="assets/img/speed/LEEDimages/1.2.png"></div>
+                <div><img  class="slickimageheigh" src="assets/img/speed/LEEDimages/1.2.png"></div>
+                <div><img  class="slickimageheigh" src="assets/img/speed/LEEDimages/1.2.png"></div>
+                <div><img  class="slickimageheigh" src="assets/img/speed/LEEDimages/1.2.png"></div>
+            </div>
+            <div class="slider slider-priparkingnav    margin-left-70 center" style="  width:1000px;">
+
+                <!--<div><img src="assets/img/speed/LEEDimages/1.3-1.png"></div>-->
+                <!--<div><img src="assets/img/speed/LEEDimages/1.3-1.png"></div>-->
+                <!--<div><img src="assets/img/speed/LEEDimages/1.3-2.png"></div>-->
+                <!--<div><img src="assets/img/speed/LEEDimages/1.3-3.png"></div>-->
+            </div>
+        </div>
+
+        <!--<div class="slider slider-for">-->
+        <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+        <!--<div> <img class="mySlides" src="g" style="width:100%"></div>-->
+        <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+        <!--<div> <img class="mySlides" src="g" style="width:100%"></div>-->
+        <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+        <!--</div>-->
+        <!--<div class="slider slider-nav">-->
+        <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+        <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/banche5_07.png" style="width:100%" ></div>-->
+        <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+        <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/banche5_07.png" style="width:100%" ></div>-->
+        <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+        <!--</div>-->
+
+
+        <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+           <p class="speedsontentTitle  margin-top-30 big " style="margin-left:80px;font-weight: bold;"> 优先车位使用政策</p>
+            <p class="speedsontentTitle  margin-top-30 big " style="margin-left:80px; font-size: 20px;color: #7a7a7a">
+
+         </p>
+            <div>
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:80px;font-weight: bold; color: #4469aa">
+                     优先车位使用政策一</p>
+                <p class="speedsontentTitle  margin-top-10 big "
+                   style="font-size:24px;color:#2890c6;margin-left:80px;">
+                    为了鼓励我厂员工使用低排放及燃油效率更高的汽车，对于汽车<br>排量不大于1.6的我司员工，
+                    可以使用指定的“低排放车辆（绿漆）”停车区。不符合要求的汽车，不允许随意停放在该<br>优先车位区域</p>
+
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:80px;font-weight: bold; color: #4469aa">
+                    优先车位使用政策二</p>
+                <p class="speedsontentTitle  margin-top-10 big "
+                   style="font-size:24px;color:#2890c6;margin-left:80px;">为了鼓励我厂员工合用汽车，对于拼车上下班的员工，<br>
+                    可以将汽车停在指定的“汽车合用(蓝漆）”停车区。不符合要求的汽车，不允许随意停放在该优先车位区域
+                </p>
+
+
+
+            </div>
+            <!--<div><img src="assets/img/speed/LEEDimages/banche1.png"></div>-->
+        </div>
+
+    </div>
+
+    <div ui-view="leedfooter"></div>
+
+
+
+    <div class=" row no-margin breadcrumb-fixed-50   ">
+
+        <div  >
+            <ul id="breadcrumb"   class="ulbreadmargin" >
+
+                <li><a ui-sref="app.dashboard"><i class="fa fa-home"></i>主页</a></li>
+                <li><a ui-sref="app.leedmain"> LEED</a></li>
+                <li><a href="#"> 可持续选址及规划</a></li>
+                <li><a href="#"> 优先车位</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,83 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-leedheatpumpnav').slick({
+        autoplay:true,
+        touchMove:true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-leedheatpumpfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-leedheatpumpfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+
+        asNavFor: '.slider-leedheatpumpnav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+
+    responsiveVoice.speak('东元地源热泵配置具有世界水准的台湾汉钟RC2系列双螺杆压缩机，运行效率高、安全可靠；；机组采用 高效强化传热铜管 干式换热器，大大提高换热效率；计算机选型，各部件优化配置，从而将效能发挥到最佳；特别注重改善部分负荷性能IPLV，比常规机组节省30%以上的电费，因为冷水机组99%的时间运行在 部分负荷工况；采用R134a环保冷媒；机组全部采用星三角降压启动，启动电流较小，既延长了接触器的寿命，又减小了对电网的冲击；用安全阀代替传统的易熔栓，机组运行更安全；配置电磁先导阀控制,完全杜绝了开机液压缩的可能；机组运行噪音源采用双层机体设计，既满足了耐压功能，又使机组有较低的运行噪音；优良的系统设计，保证了良好的回油效果。' , 'Chinese Female', {rate: 0.95}, {volume: 3});
+
+</script>
+
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/background.mp3">
+</audio>
+<div class="speed-main-contentpage">
+<div class="row no-margin speed-main-contentpage-minheight"   >
+
+
+    <div class="col-lg-7  margin-top-50">
+
+        <div class="slider slider-leedheatpumpfor center">
+
+            <div><img   class="slickimageheigh"   src="assets/img/speed/LEEDimages/diyuanrebeng01_03.png"></div>
+            <div><img   class="slickimageheigh"   src="assets/img/speed/LEEDimages/diyuanrebeng02_03.png"></div>
+        </div>
+        <div class="slider slider-leedheatpumpnav   margin-left-70 center" style="  width:1000px;">
+
+            <div><img src="assets/img/speed/LEEDimages/3.3-1.png"></div>
+            <div><img src="assets/img/speed/LEEDimages/3.3-3.png"></div>
+        </div>
+    </div>
+    <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+
+        <div><img src="assets/img/speed/LEEDimages/diyuanrebengCOP_03.png"></div>
+
+    </div>
+
+
+
+
+</div>
+
+<div ui-view="leedfooter"></div>
+
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+        <ul  id="breadcrumb" class="ulbreadmargin   ">
+
+            <li><a ui-sref="app.dashboard"><i class="fa fa-home"></i>主页</a></li>
+            <li><a ui-sref="app.leedmain">LEED</a></li>
+            <li><a href="#">能源与大气</a></li>
+            <li><a href="#">地源热泵</a></li>
+        </ul>
+
+
+</div>
+
+
+</div>

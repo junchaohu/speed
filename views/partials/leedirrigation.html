@@ -1,0 +1,63 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-leedirrigationnav').slick({
+        autoplay:true,
+        touchMove:true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-leedirrigationfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-leedirrigationfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+
+        asNavFor: '.slider-leedirrigationnav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+
+
+
+//    responsiveVoice.speak('一期厂房配套的绿化面积共约4200平米。按照LEED基准公式计算，年需灌溉用水量为219470加仑。本项目选用耐汗植物，适当采用低密度种植方式，经计算，年需灌溉用水量为100648加仑。节水量高达百分之 54.14。' , 'Chinese Female', {rate: 0.95}, {volume: 3});
+
+</script>
+
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/leedjieshui.mp3">
+</audio>
+<div class="speed-main-contentpage">
+<div class="row no-margin speed-main-contentpage-minheight"   >
+
+
+</div>
+
+<div ui-view="leedfooter"></div>
+
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+    <div >
+        <ul id="breadcrumb" class="ulbreadmargin   ">
+
+            <li><a ui-sref="app.dashboard"><i class="fa fa-home"></i>主页</a></li>
+            <li><a ui-sref="app.leedmain"> LEED</a></li>
+            <li><a href="#"> 节约水资源</a></li>
+            <li><a href="#"> 节水灌溉</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>

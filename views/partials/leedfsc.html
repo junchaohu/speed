@@ -1,0 +1,120 @@
+﻿
+<script type="text/javascript">
+    console.log('00000');
+    $('.slider-leedfscnav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-leedfscfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('1111');
+    $('.slider-leedfscfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-leedfscnav'
+    });
+
+    responsiveVoice.speak('全球的森林面积减少，森林退化加剧。森林资源在数量和质量上出现下降趋势，欧美的一些消费者，拒绝购买没有合法来源证明的木制品。1990年美国加洲会议上，一些消费者、木材贸易组织、环境和人权组织代表认为有必要，创建一个诚实可信的体系来识别良好经营的森林，将其作为可接受的林产品来源。森林管理委员会的名称由此产生。我厂新建厂房使用的木材均经过严格挑选，100%为FSC认证。' , 'Chinese Female', {rate: 0.95}, {volume: 3});
+
+</script>
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/leedcailiao.mp3">
+</audio>
+<div class=" speed-main-contentpage"   >
+<div class="row no-margin speed-main-contentpage-minheight"   >
+
+
+    <div class="col-lg-7  margin-top-20">
+    <div class="slider slider-leedfscfor center">
+        <div><img class="slickimageheigh" src="assets/img/speed/LEEDimages/4.1-1big.png"></div>
+        <div><img class="slickimageheigh" src="assets/img/speed/LEEDimages/4.1-2big.png"></div>
+        <div><img class="slickimageheigh" src="assets/img/speed/LEEDimages/4.1-3big.png"></div>
+        <div><img class="slickimageheigh" src="assets/img/speed/LEEDimages/4.1-4big.png"></div>
+    </div>
+    <div class="slider slider-leedfscnav   margin-left-70 center" style="  width:1000px;">
+
+        <div><img src="assets/img/speed/LEEDimages/4.1-1.png"></div>
+        <div><img src="assets/img/speed/LEEDimages/4.1-2.png"></div>
+        <div><img src="assets/img/speed/LEEDimages/4.1-3.png"></div>
+        <div><img src="assets/img/speed/LEEDimages/4.1-4.png"></div>
+    </div>
+    </div>
+
+
+    <!--<div class="slider slider-for">-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="g" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="g" style="width:100%"></div>-->
+    <!--<div> <img class="mySlides" src="" style="width:100%"></div>-->
+    <!--</div>-->
+    <!--<div class="slider slider-nav">-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/banche5_07.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/banche5_07.png" style="width:100%" ></div>-->
+    <!--<div>  <img class="demo w3-border w3-hover-shadow" src="assets/img/speed/LEEDimages/pic_07_03.png" style="width:100%" ></div>-->
+    <!--</div>-->
+
+
+    <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+
+        <div class="slider slider-leedfscfor marg4in-left-20">
+
+            <div>
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:100px;font-weight: bold; color: #4469aa">
+                    </p>
+                <p class="speedsontentTitle  margin-top-10 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;">
+                     </p>
+
+
+
+            <div class="hr-line-dashed"></div>
+
+            <div>
+                <p class="speedsontentTitle  margin-top-50 big "
+                   style="margin-top: 150px; margin-left:100px;font-weight: bold; color: #4469aa">
+                    FSC认证木材</p>
+                <p class="speedsontentTitle  margin-top-10 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;">
+                    对于木材基的材料、产品，最少要有50%符合按森林管理协会(FSC)标准认证的木材，这些构件包括（不限于）结构框架、一般尺寸的框架、地板、地板基层、木门和家俱。
+                    本项目上，总包和精装分包使用的木材均采购了FSC认证的木材。
+
+                </p>
+
+            </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+<div ui-view="leedfooter"></div>
+
+
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+    <div  >
+        <ul id="breadcrumb"   class="ulbreadmargin" >
+
+            <li><a ui-sref="app.dashboard"> <i class="fa fa-home"></i>主页</a></li>
+            <li><a ui-sref="app.leedmain"> LEED</a></li>
+            <li><a href="#"> 能源与大气</a></li>
+            <li><a href="#"> FSC认证木材</a></li>
+
+        </ul>
+    </div>
+
+</div>
+
+</div>

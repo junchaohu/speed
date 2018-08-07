@@ -1,0 +1,117 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-renewnav').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-renewfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-renewfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-renewnav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+</script>
+
+
+
+<div class="row no-margin speed-main-contentpage" ng-controller="FlotCtrl"    >
+
+    <div class="col-lg-7 margin-top-20 margin-left-10">
+        <span class="margin-left-40 font-190  ">趋势</span>
+        <div class="hr-line-dashed"></div>
+        <div class="widget">
+            <div class="widget-header ">
+                <span class="widget-caption"> </span>
+                <div class="widget-buttons">
+                    <a href="" widget-maximize></a>
+                    <a href="" widget-collapse></a>
+                    <a href="" widget-dispose></a>
+                </div>
+            </div>
+            <div class="widget-body">
+
+                <highchart    id="chart2"  config="chartConfigCO2"></highchart>
+
+                <!--<div  ui-jq="plot" style="height: 400px" ui-options="{{StackedChartDataTwoLine}}, {{StackedChartOptions}}" class="chart chart-lg"></div>-->
+
+            </div>
+
+
+            <div class="hr-line-dashed"></div>
+
+            <div><img src="assets/img/speed/energysavingimages/images3_08.png"></div>
+            <!--<div class="hr-line-dashed"></div>-->
+
+            <!--<div class="buttons-preview">-->
+            <!--<div class="btn-group btn-group-justified">-->
+            <!--<a href="#" class="btn btn-default btn-lg">热舒适</a>-->
+            <!--<a href="#" class="btn btn-default btn-lg">声环境</a>-->
+            <!--<a href="#" class="btn btn-default btn-lg">光环境</a>-->
+            <!--<a href="#" class="btn btn-default btn-lg">PM2.5</a>-->
+            <!--<a href="#" class="btn btn-default btn-lg">CO2</a>-->
+            <!--</div>-->
+
+
+            <!--</div>-->
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="row">
+            <img  class=" margin-top-20 margin-left-50" src="assets/img/speed/energysavingimages/jienengliangzhanshi_kezaishengnengyuan_03.png">
+
+            <!--<img src="assets/img/speed/LEEDimages/VEDIO_03.png">-->
+        </div>
+
+    </div>
+    <!--<div class="col-lg-7  margin-top-20">-->
+
+        <!--<div class="slider slider-for center">-->
+
+            <!--<div><img src="assets/img/speed/LEEDimages/banche_03.png"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/banche2_03.png"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/banche_03.png"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/banche2_03.png"></div>-->
+        <!--</div>-->
+        <!--<div class="slider slider-nav   margin-left-70 center" style="  width:1000px;">-->
+
+            <!--<div><img src="assets/img/speed/LEEDimages/dongyuanbanche.png"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/banche5_07.png"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/dongyuanbanche.png"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/banche5_07.png"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+</div>
+
+<div ui-view="energysavingmainfooter"></div>
+
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+    <div  >
+        <ul   id="breadcrumb"   class="ulbreadmargin" >
+
+            <li><a ui-sref="app.dashboard"> <i class="fa fa-home"></i>主页</a></li>
+            <li><a ui-sref="app.energysavingmotor"> 节能量展示</a></li>
+            <li><a href="#"> 可再生能源</a></li>
+        </ul>
+    </div>
+
+</div>

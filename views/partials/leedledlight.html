@@ -1,0 +1,138 @@
+﻿
+<script type="text/javascript">
+
+    console.log('4444444444444');
+    $('.slider-leedledlightnav').slick({
+        autoplay:true,
+        touchMove:true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-leedledlightfor',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+    console.log('5555555555555');
+    $('.slider-leedledlightfor').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+
+        asNavFor: '.slider-leedledlightnav'
+    });
+
+    $(document).on('ready', function () {
+        console.log('2222222222222222222222222222222222222222222222222222222222222222222222');
+
+    });
+</script>
+
+<audio id="player"  autoplay="autoplay" controls="controls" loop="loop" preload="auto" hidden="false" volume="0.6"
+       src="assets/sound/background.mp3">
+</audio>
+<div class=" speed-main-contentpage"   >
+
+
+<div class="row no-margin  speed-main-contentpage-minheight"   >
+
+
+    <div class="col-lg-7  margin-top-50">
+
+        <div class="slider slider-leedledlightfor center">
+
+            <!--<div><img src="assets/img/speed/LEEDimages/banche_03.jpg"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/banche2_03.jpg"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/banche_03.jpg"></div>-->
+            <!--<div><img src="assets/img/speed/LEEDimages/banche2_03.jpg"></div>-->
+        </div>
+        <div class="slider slider-leedledlightnav   margin-left-70 center" style="margin-top: 100px;  width:1000px;">
+
+            <div><img src="assets/img/speed/LEEDimages/3.2-1.jpg"></div>
+            <div><img src="assets/img/speed/LEEDimages/3.2-2.jpg"></div>
+            <div><img src="assets/img/speed/LEEDimages/3.2-3.jpg"></div>
+            <div><img src="assets/img/speed/LEEDimages/3.2-4.jpg"></div>
+        </div>
+    </div>
+
+
+
+    <div class="col-lg-5 margin-top-20 margin-left-1 no-padding no-border">
+        <
+
+        <div class="slider slider-leedledlightfor margin-left-20">
+
+            <div>
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:100px;font-weight: bold; color: #4469aa">
+                    	办公室</p>
+                <p class="speedsontentTitle  margin-top-5 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;">
+                    办公室工作区选用3*18w LED格栅灯，共20盏；办公室走道选用9w筒灯，共11盏。办公室面积为222平米，
+                    灯光功率密度为5.3w/m²；ASHRAE的基准功率密度为11.8 w/m²，与之相比，节能率为55%；</p>
+
+                <div class="hr-line-dashed"></div>
+            </div>
+            <div>
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:100px;font-weight: bold; color: #4469aa">
+                    办公室</p>
+                <p class="speedsontentTitle  margin-top-5 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;">
+                    办公室工作区选用3*18w LED格栅灯，共20盏；办公室走道选用9w筒灯，共11盏。办公室面积为222平米，
+                    灯光功率密度为5.3w/m²；ASHRAE的基准功率密度为11.8 w/m²，与之相比，节能率为55%；</p>
+
+                <div class="hr-line-dashed"></div>
+
+
+            </div>
+            <div>
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:100px;font-weight: bold; color: #4469aa">
+                    	会议室</p>
+                <p class="speedsontentTitle  margin-top-5 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;">
+                    会议室选用3*10w LED格栅灯，共6盏，灯光功率密度为4.4w/m²；ASHRAE的基准功率密度为14 w/m²，与之相比，节能率高达68.5%.</p>
+
+                <div class="hr-line-dashed"></div>
+
+
+
+            </div>
+            <div>
+                <p class="speedsontentTitle  margin-top-30 big "
+                   style="margin-left:100px;font-weight: bold; color: #4469aa">
+                    	厂房</p>
+                <p class="speedsontentTitle  margin-top-5 big "
+                   style="font-size:24px;color:#2890c6;margin-left:100px;">
+                    厂房选用LED高天棚照明系统，共358盏，灯光功率密度为2.44w/m²；ASHRAE的基准功率密度为13 w/m²，与之相比，节能率高达81%。</p>
+
+                <div class="hr-line-dashed"></div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div ui-view="leedfooter"></div>
+
+
+<div class=" row no-margin breadcrumb-fixed-50   ">
+
+    <div >
+        <ul id="breadcrumb"   class="ulbreadmargin" >
+
+            <li><a ui-sref="app.dashboard"> <i class="fa fa-home"></i>主页</a></li>
+            <li><a ui-sref="app.leedmain"> LEED</a></li>
+            <li><a href="#"> 能源与大气</a></li>
+            <li><a href="#"> LED照明系统</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</div>
